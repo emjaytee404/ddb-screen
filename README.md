@@ -14,16 +14,16 @@ I'm hoping it's pretty self-explanatory:
 
 ![screenshot](screenshot.png?raw=true)
 
-### Table Colums
+### Table Columns
 
 | Name <sup>Level - Link</sup> | Hit Points | Passive Perception  | Passive Investigation  | Passive Insight  | Armor Class  |
-| ---                        | ---        | ---                 | ---                    | ---              | ---          |
+| ---                          | ---        | ---                 | ---                    | ---              | ---          |
 
 ### Buttons
 
   * ❌ Remove Player
   * ✔️ Add New Player
-  * 🔎 Open Zoom Control
+  * 🔎 Open/Close Zoom Control
   * 💾 Save Current Player List as a Campaign
   * 🔄 Refresh Stats
   * ⬇️ Export JSON
@@ -53,7 +53,7 @@ I didn't realize this was a FAQ, but OK: The Zoom feature is there because I usu
 
 ### Alternative Installation: Deploy to Cloudflare Pages
 
-You can deploy to [Cloudflare Pages](https://pages.cloudflare.com/). The [Get Started Guide](https://developers.cloudflare.com/pages/get-started/) has all the information you need. Leave **Build command** empty and set **Build output directory.** to `public`.
+You can deploy to [Cloudflare Pages](https://pages.cloudflare.com/). The [Get Started Guide](https://developers.cloudflare.com/pages/get-started/) has all the information you need. Leave **Build command** empty and set **Build output directory** to `public`.
 
 ## Credits
 
