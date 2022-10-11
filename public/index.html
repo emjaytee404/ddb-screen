@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DDB DM Screen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><!-- https://thenounproject.com/icon/d20-dice-4888843/ - danke Lars! -->
+  <link rel="apple-touch-icon" href="favicon-180.png" type="image/png">
+  <script src="functions.js" async></script>
+  <script src="ui.js" async defer></script>
+</head>
+<body>
+
+  <table>
+
+  <thead>
+    <tr>
+      <th></th>
+      <th title="Hit Points">HP</th>
+      <th title="Passive Perception">Per</th>
+      <th title="Passive Investigation">Inv</th>
+      <th title="Passive Insight">Ins</th>
+      <th title="Armor Class">AC</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody id="playersTable">
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td class="toolbarRow" colspan="6"><input size="10" name="new-player" id="inputNewPlayer" value="" placeholder="Enter character URL or ID"></td>
+      <td class="buttonCell"><button title="add" id="buttonNewPlayerAdd">✔️</button></td>
+    </tr>
+    <tr>
+      <td class="toolbarRow" colspan="6">
+        <button title="zoom" id="buttonZoom">🔎</button> <input type="number" name="zoom" id="inputZoom" title="zoom" size="4" value="150" step="10" min="30" max="500">
+        <button title="save campaign" id="buttonSave">💾</button>
+        <button title="reload" id="buttonReload">🔄</button>
+        <button title="export" id="buttonExport">⬇️</button>
+        <button title="delete all" id="buttonDeleteAllPlayers">⛔</button>
+      </td>
+      <td class="buttonCell">
+      </td>
+    </tr>
+  </tfoot>
+
+  </table>
+
+  <details id="campaignsDetails">
+  <summary><span>Campaigns</span></summary>
+    <ul id="campaignsList">
+    </ul>
+    <ul>
+      <li id="newCampaignListitem">
+        Save: <input size="13" name="new-campaign" id="inputNewCampaign" value="" placeholder="Campaign Name">
+        <button title="accept" id="buttonNewCampaignSave">✔️</button>
+        <button title="cancel" id="buttonNewCampaignCancel">❌</button>
+      </li>
+    </ul>
+  </details>
+
+  <p id="errorMessage"></p>
+
+  <dialog id="confirmationDialog">
+    <form method="dialog">
+      <p><strong id="confirmationDialogTitle"></strong></p>
+      <p>Are you sure?</p>
+      <button value="default">Yes</button>
+      <button value="cancel">No</button>
+    </form>
+  </dialog>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+:root {
+  --main-bg-color: #222;
+  --alt-bg-color: #737373;
+  --text-color: #eee;
+  --link-color: #ec994d;
+}
+body {
+  padding: 1em;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+  font-family: sans-serif;
+  transform: scale(150%); /* for that "native app" feeling, lol */
+  transform-origin: top left;
+  width: fit-content; /* remove scrollbars on zoom */
+}
+table {
+  border-collapse: collapse;
+/*user-select: none; /* needed for dragging functionality? */
+}
+th, td {
+  text-align: right;
+  padding: 0.125em 0.25em;
+}
+tr[draggable=true] {
+  cursor: grab;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--alt-bg-color);
+}
+table td + td {
+  border-left: 1px solid var(--text-color);
+}
+span.playerName {
+  cursor: text;
+  padding: 0 0.2rem;
+}
+span.playerName:focus {
+  background-color: white;
+  color: black;
+}
+sup {
+  font-size: 0.75rem;
+  margin-left: 0.2rem;
+}
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: var(--link-color);
+}
+td.toolbarRow {
+  padding: 0;
+}
+input#inputNewPlayer {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+input#inputZoom {
+  display: none;
+}
+td.buttonCell {
+  background-color: var(--main-bg-color);
+  border-left: 0;
+}
+details {
+  width: fit-content;
+}
+details summary span, li span {
+  /* mimic link behavior */
+  color: var(--link-color);
+  cursor: pointer;
+  user-select: none;
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style: square;
+  margin: 0.25rem 0;
+}
+p#errorMessage {
+  display: none;
+  color: red;
+}
+li#newCampaignListitem {
+  display: none;
+}
+dialog {
+  text-align: center;
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.highlight {
+  outline: 1px solid;
+}

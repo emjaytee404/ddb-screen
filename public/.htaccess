@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^api/character/(\d+)$ api.php?id=$1
