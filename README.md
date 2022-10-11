@@ -14,7 +14,12 @@ I'm hoping it's pretty self-explanatory:
 
 ![screenshot](screenshot.png?raw=true)
 
-Here's what all the buttons do:
+### Table Colums
+
+| Name <sup>Level - Link</sup> | Hit Points | Passive Perception  | Passive Investigation  | Passive Insight  | Armor Class  |
+| ---                        | ---        | ---                 | ---                    | ---              | ---          |
+
+### Buttons
 
   * ❌ Remove Player
   * ✔️ Add New Player
@@ -27,7 +32,9 @@ Here's what all the buttons do:
   * In the Campaigns List
     * 🗑️ Delete Campaign
 
-All data is stored in the browser. I haven't had the need to create import funcitonality. 🤷
+### Other Features
+
+All data is stored in the browser. I haven't had the need to implement import funcitonality. 🤷
 
 Player rows are draggable. You can manually sort them by name, initiative order, whatever.
 
