@@ -10,18 +10,22 @@ A very basic DM Screen for [D&D Beyond](https://www.dndbeyond.com/). Pretty much
 
 ## How to Use
 
-I'm hoping it's pretty self-explanatory, but here's what all the buttons do:
+I'm hoping it's pretty self-explanatory:
 
-  * ❌ - Remove Player
-  * ✔️ - Add New Player
-  * 🔎 - Open Zoom Control
-  * 💾 - Save Current Player List as a Campaign
-  * 🔄 - Refresh the Stats
-  * ⬇️ - Export JSON
-  * ⛔ - Delte All Players
+![screenshot](screenshot.png?raw=true)
 
-  * In the Campaign List
-    * 🗑️ - Delete Campaign
+Here's what all the buttons do:
+
+  * ❌ Remove Player
+  * ✔️ Add New Player
+  * 🔎 Open Zoom Control
+  * 💾 Save Current Player List as a Campaign
+  * 🔄 Refresh Stats
+  * ⬇️ Export JSON
+  * ⛔ Delete All Players
+
+  * In the Campaigns List
+    * 🗑️ Delete Campaign
 
 All data is stored in the browser. I haven't had the need to create import funcitonality. 🤷
 
@@ -47,5 +51,5 @@ You can deploy to [Cloudflare Pages](https://pages.cloudflare.com/). The [Get St
 ## Credits
 
   * Again, many thanks to DjikstraTheDragon on the DDB forums, for sharing their work.
-  * Favicon by [Lars](https://thenounproject.com/icon/d20-dice-4888843/). Danke.
+  * Favicon by [Lars](https://thenounproject.com/icon/d20-dice-4888843/). Danke!
   * External link icon by the awesome folks at [Font Awesome](https://fontawesome.com/).
