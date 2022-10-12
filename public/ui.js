@@ -23,7 +23,7 @@ inputZoom.addEventListener("change", () => { zoomPage(); });
 zoomPage();
 
 buttonZoom.addEventListener("click", () => {
-  inputZoom.style.display = (inputZoom.style.display == 'none') ? 'initial' : 'none';
+  inputZoom.style.display = (inputZoom.style.display == 'initial') ? 'none' : 'initial';
 });
 
 buttonNewPlayerAdd.addEventListener("click", inputNewPlayerSubmit);
