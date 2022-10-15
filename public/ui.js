@@ -1,5 +1,5 @@
-const characterServiceURL = "json/";
-//const characterServiceURL = "api/character/";
+//const characterServiceURL = "json/";
+const characterServiceURL = "api/character/";
 const characterSheetURL = "https://dndbeyond.com/characters/";
 
 var isChanged;
