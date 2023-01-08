@@ -384,7 +384,7 @@ function generateExportJSON() {
 
     exportJSON.playersAdvanced.push({
       'name': playerName,
-      'level': playerLevel,
+      'level': parseInt(playerLevel),
       'extras': [
         {'value': playerAC},
         {'value': playerHP}
